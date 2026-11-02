@@ -156,3 +156,19 @@ This updates the generated pricing block in `index.html` and the three service p
 Avoid manually changing generated service HTML or content inside the `PRICING:START` / `PRICING:END` markers; regenerate from the template and catalog instead. The original DOCX is not needed to run or build the site.
 
 Package buttons open an email enquiry with the service and selected package in the subject. They do not process payments or subscriptions. No public deployment has been performed for these changes.
+
+## Website SEO and Google Search Console
+
+The supplied Google verification token is stored in `src/data/site.json`. The content generator includes it exactly once inside the `<head>` of the homepage and all service pages. It is present in the static production HTML, not inserted later by browser JavaScript.
+
+Each page also has a distinct title and description, Open Graph/Twitter metadata, and Organization structured data. Service pages additionally include Service structured data. `robots.txt` permits crawling.
+
+Before the final public launch, set `siteUrl` in `src/data/site.json` to the exact production HTTPS origin, including the preferred www/non-www hostname, then run `npm run build`. Alternatively, supply `SITE_URL` in the build environment. Do not use a temporary preview domain as the canonical production domain.
+
+Once the final origin is configured, the generator adds absolute canonical and social URLs, Organization URL/logo references, and `public/sitemap.xml` containing all four pages. It also adds the sitemap location to `robots.txt`. Without a configured origin it omits these domain-specific URLs instead of guessing a domain.
+
+Google cannot verify a localhost-only change. After publishing to the matching Search Console property, inspect the live page source for the tag and complete verification in Search Console. Submit `/sitemap.xml` after public launch. The verification tag establishes ownership; it does not itself improve rankings.
+
+## Admin access
+
+There is currently no admin dashboard, authentication, CMS, database, or upload backend. Content is maintained in `src/data/portfolio.js`, `src/data/services.json`, the homepage HTML, and the shared service template, then rebuilt. Local media folders are developer-managed asset directories, not a public upload feature.
