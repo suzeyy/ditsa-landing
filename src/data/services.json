@@ -1,0 +1,301 @@
+{
+  "currency": "USD",
+  "services": [
+    {
+      "title": "Video Editing",
+      "slug": "video-editing",
+      "eyebrow": "Motion & storytelling",
+      "headline": "Every frame matters.\nMake yours count.",
+      "description": "Turn your raw footage into purposeful, engaging content. Outsource your editing to a creative partner for short-form videos, brand stories, and consistent monthly content.",
+      "basis": "month",
+      "scope": [
+        "Short-form content & reels",
+        "Captions, colour & sound",
+        "Motion graphics & format adaptations"
+      ],
+      "packages": [
+        {
+          "title": "Video Essential",
+          "price": 299,
+          "popular": false,
+          "description": "For creators and businesses needing consistent, clean short-form editing.",
+          "features": [
+            "4 short-form videos per month",
+            "Up to 60 seconds per video",
+            "Basic cuts and transitions",
+            "Captions and subtitles",
+            "Basic color correction",
+            "Music and sound effects",
+            "1 consolidated revision round per video",
+            "9:16 vertical format"
+          ],
+          "delivery": "3–5 business days per batch",
+          "notes": [
+            "Client supplies footage, scripts, and brand assets."
+          ]
+        },
+        {
+          "title": "Video Growth",
+          "price": 599,
+          "popular": true,
+          "description": "For brands and creators looking for polished social media content.",
+          "features": [
+            "8 short-form videos per month",
+            "Up to 60 seconds per video",
+            "Advanced cuts and transitions",
+            "Animated captions",
+            "Professional color grading",
+            "Sound design and audio enhancement",
+            "Motion graphics and text animations",
+            "1 consolidated revision round per video",
+            "2 aspect ratios per video"
+          ],
+          "delivery": "Weekly batches",
+          "notes": [
+            "Client supplies footage, scripts, and brand assets."
+          ]
+        },
+        {
+          "title": "Video Pro",
+          "price": 999,
+          "popular": false,
+          "description": "For agencies and established brands seeking premium editing support.",
+          "features": [
+            "12 short-form videos per month",
+            "Up to 90 seconds per video",
+            "Advanced cinematic editing",
+            "Professional color grading",
+            "Animated captions and typography",
+            "Advanced motion graphics",
+            "Sound design and audio enhancement",
+            "Stock footage integration (standard licensed assets, where available)",
+            "2 consolidated revision rounds per video",
+            "2 aspect ratios per video",
+            "Priority delivery"
+          ],
+          "delivery": "Weekly batches",
+          "notes": [
+            "Client supplies footage, scripts, and brand assets."
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "title": "Extra short-form video",
+          "price": "$50–$100"
+        },
+        {
+          "title": "YouTube video (5–10 minutes)",
+          "price": "$150–$300"
+        },
+        {
+          "title": "Podcast episode editing",
+          "price": "$150–$300"
+        },
+        {
+          "title": "Thumbnail design",
+          "price": "$25–$50"
+        },
+        {
+          "title": "Rush delivery",
+          "price": "+25–50%"
+        }
+      ]
+    },
+    {
+      "title": "Branding",
+      "slug": "branding",
+      "eyebrow": "Identity & expression",
+      "headline": "A brand with purpose.\nAn identity that lasts.",
+      "description": "Turn what makes your business different into a clear, consistent visual identity. From your first logo to a complete brand system, build a presence that feels like you.",
+      "basis": "project",
+      "scope": [
+        "Logo design & visual identity",
+        "Brand guidelines & brand books",
+        "Social media & digital brand assets"
+      ],
+      "packages": [
+        {
+          "title": "Brand Essential",
+          "price": 199,
+          "popular": false,
+          "description": "For startups and small businesses establishing their brand identity.",
+          "features": [
+            "Brand discovery questionnaire and consultation",
+            "2 initial logo concepts",
+            "2 rounds of revisions",
+            "Primary logo and alternate logo",
+            "Brand color palette",
+            "Typography selection",
+            "Basic brand guidelines (PDF)",
+            "Social media profile logo",
+            "High-resolution logo files (PNG, JPG, SVG)",
+            "Editable source files (AI/EPS)"
+          ],
+          "delivery": "5–7 business days",
+          "notes": []
+        },
+        {
+          "title": "Brand Identity",
+          "price": 249,
+          "popular": true,
+          "description": "For businesses seeking a consistent and professional visual identity.",
+          "features": [
+            "Brand discovery questionnaire",
+            "3 initial logo concepts",
+            "3 rounds of revisions",
+            "Primary, secondary, and alternate logos",
+            "Brand color palette and typography system",
+            "Brand guidelines (PDF)",
+            "Brand pattern and visual elements",
+            "Digital business card design",
+            "Social media profile and cover graphics",
+            "3 branded social media templates",
+            "Logo files (PNG, JPG, SVG, PDF)",
+            "Editable source files (AI/EPS)"
+          ],
+          "delivery": "7–10 business days",
+          "notes": []
+        },
+        {
+          "title": "Brand Signature",
+          "price": 599,
+          "popular": false,
+          "description": "For established businesses seeking a comprehensive digital brand identity.",
+          "features": [
+            "Brand discovery and strategy questionnaire",
+            "Brand positioning and target audience research",
+            "4 initial logo concepts",
+            "4 rounds of revisions",
+            "Complete logo suite and brand marks",
+            "Comprehensive brand guidelines (PDF)",
+            "Brand color palette and typography system",
+            "Brand patterns, icons, and visual elements",
+            "Digital stationery design",
+            "Social media branding kit",
+            "6 branded social media templates",
+            "Email signature design",
+            "Presentation template (PowerPoint/Google Slides)",
+            "Brand mockups and visual presentation",
+            "Organized digital brand asset folder",
+            "Editable source files (AI/EPS)"
+          ],
+          "delivery": "12–15 business days",
+          "notes": []
+        }
+      ],
+      "extras": []
+    },
+    {
+      "title": "Search Engine Optimization",
+      "shortTitle": "SEO",
+      "slug": "seo",
+      "eyebrow": "Search & organic growth",
+      "headline": "Be found by the people\nlooking for you.",
+      "description": "Build a stronger foundation for organic search. Connect technical improvements, relevant keywords, and useful content through a focused monthly SEO partnership.",
+      "basis": "month",
+      "scope": [
+        "Website audits & technical SEO",
+        "Keyword research & on-page optimization",
+        "Content optimization & monthly reporting"
+      ],
+      "packages": [
+        {
+          "title": "Seo Essential",
+          "price": 299,
+          "popular": false,
+          "description": "For startups and small businesses building their organic search presence.",
+          "features": [
+            "Initial website SEO audit",
+            "Keyword research (up to 20 target keywords)",
+            "On-page SEO for up to 5 pages",
+            "Meta title and description optimization",
+            "Heading structure recommendations",
+            "Image SEO and alt-text optimization",
+            "Basic technical SEO checks",
+            "Google Search Console setup or review",
+            "Monthly SEO performance report"
+          ],
+          "delivery": "Monthly service",
+          "notes": []
+        },
+        {
+          "title": "Seo Growth",
+          "price": 599,
+          "popular": true,
+          "description": "For growing businesses aiming to improve organic visibility and traffic.",
+          "features": [
+            "Comprehensive SEO audit",
+            "Keyword research (up to 50 target keywords)",
+            "On-page SEO for up to 10 pages",
+            "Technical SEO monitoring",
+            "Competitor analysis",
+            "Internal linking optimization",
+            "Content optimization for up to 4 existing pages/articles",
+            "Google Search Console and Analytics review",
+            "Local SEO optimization",
+            "Backlink profile analysis",
+            "Monthly SEO report and recommendations"
+          ],
+          "delivery": "Monthly service",
+          "notes": []
+        },
+        {
+          "title": "Seo Authority",
+          "price": 999,
+          "popular": false,
+          "description": "For established businesses competing in more challenging search markets.",
+          "features": [
+            "Advanced technical SEO audit",
+            "Keyword research (up to 100 target keywords)",
+            "On-page SEO for up to 20 pages",
+            "Advanced competitor analysis",
+            "Technical SEO recommendations and implementation",
+            "Content strategy and planning",
+            "Optimization of up to 8 existing pages/articles",
+            "Internal linking strategy",
+            "Local SEO optimization",
+            "Backlink analysis and outreach strategy",
+            "Google Search Console and Analytics monitoring",
+            "Monthly SEO strategy consultation",
+            "Comprehensive monthly performance report"
+          ],
+          "delivery": "Monthly service",
+          "notes": []
+        }
+      ],
+      "extras": [
+        {
+          "title": "Standalone SEO audit",
+          "price": "$150–$300"
+        },
+        {
+          "title": "Keyword research",
+          "price": "$100–$200"
+        },
+        {
+          "title": "SEO blog article",
+          "price": "$50–$100"
+        },
+        {
+          "title": "Website SEO optimization project",
+          "price": "$300–$800"
+        },
+        {
+          "title": "Local SEO setup",
+          "price": "$150–$300"
+        }
+      ]
+    }
+  ],
+  "terms": [
+    "All services are delivered digitally. No physical printing, production, filming, or shipping is included unless separately agreed.",
+    "Project timelines begin after payment and receipt of all required content, access, and brand materials.",
+    "A revision round means one consolidated set of feedback from the client. Changes outside the approved brief may be billed separately.",
+    "Any work beyond the listed package scope will be quoted and approved before it begins.",
+    "For monthly services, payment is due at the start of each billing cycle. Unused monthly deliverables do not roll over unless agreed in writing.",
+    "Video editing clients must provide organized raw footage, scripts, and required brand assets. The video packages assume a maximum of 5 minutes of supplied raw footage per short-form video.",
+    "Video packages exclude filming, scripting, voiceover recording, content strategy, complex VFX, and advanced compositing unless separately quoted.",
+    "SEO packages exclude paid advertising, paid backlinks, premium third-party tool subscriptions, extensive website development, and guaranteed rankings. SEO outcomes depend on competition, website condition, and implementation."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ditsa-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "content:sync": "node scripts/generate-service-pages.mjs",
+    "predev": "npm run content:sync",
+    "prebuild": "npm run content:sync"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  }
+}
