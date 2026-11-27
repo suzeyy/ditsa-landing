@@ -1,5 +1,11 @@
 import { portfolio } from '../data/portfolio.js';
 
+function arrowIcon() {
+  const icon = document.createElement('i');
+  icon.className = 'arrow';
+  return icon;
+}
+
 function caption(title, description) {
   const wrapper = document.createElement('div');
   wrapper.className = 'portfolio-caption';
@@ -37,7 +43,8 @@ function videoCard(item) {
   // A download/open link stays available if inline playback is unsupported.
   const fallback = document.createElement('a');
   fallback.href = item.src;
-  fallback.textContent = 'Open video ↗';
+  fallback.textContent = 'Open video ';
+  fallback.append(arrowIcon());
   fallback.className = 'portfolio-resource-link';
   card.append(video, caption(item.title, item.description), fallback);
   return card;
@@ -66,7 +73,8 @@ function bookCard(item) {
   }
   const badge = document.createElement('span');
   badge.className = 'book-preview-badge';
-  badge.textContent = 'View brand book ↗';
+  badge.textContent = 'View brand book ';
+  badge.append(arrowIcon());
   preview.append(badge);
   card.append(preview, caption(item.title, item.description));
   return card;

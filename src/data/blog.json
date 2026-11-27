@@ -1,0 +1,100 @@
+{
+  "posts": [
+    {
+      "slug": "how-to-write-a-video-editing-brief",
+      "title": "How to write a video editing brief your editor will love",
+      "category": "Video editing",
+      "date": "2026-11-18",
+      "readTime": "6 min read",
+      "excerpt": "A clear brief is the fastest way to get the edit you imagined on the first pass. Here is what to include, and what to leave out.",
+      "body": [
+        { "type": "p", "text": "Most revision rounds don’t happen because an editor got something wrong. They happen because the editor had to guess. A good brief removes the guessing, so the first cut lands closer to what you had in mind and your revision rounds go into polish instead of direction." },
+        { "type": "h2", "text": "Start with the goal, not the footage" },
+        { "type": "p", "text": "Before you describe cuts or transitions, say what the video needs to do. Is it meant to drive sign-ups, explain a product, or keep an existing audience engaged? One sentence on purpose shapes every decision an editor makes, from pacing to music." },
+        { "type": "h2", "text": "What every brief should include" },
+        { "type": "ul", "items": [
+          "The platform and format: for example, a 9:16 reel for Instagram or a 16:9 YouTube upload.",
+          "Target length, and whether that is a hard limit or a guide.",
+          "Your audience, in a sentence or two.",
+          "Two or three reference videos you like, with a note on what you like about each.",
+          "Brand assets: logo files, fonts, colours, and any intro or outro you always use.",
+          "Must-have moments, such as a key quote, a product shot, or a call to action."
+        ] },
+        { "type": "h2", "text": "Organise your footage before you send it" },
+        { "type": "p", "text": "Name files clearly and group them into folders by scene or topic. If you recorded several takes, mark the ones you prefer. An editor working through organised footage spends their time on storytelling rather than searching." },
+        { "type": "quote", "text": "The best briefs are short. One page that answers the right questions beats five pages of notes." },
+        { "type": "h2", "text": "Give feedback in one consolidated round" },
+        { "type": "p", "text": "When the first cut arrives, gather everyone’s comments into a single list with timestamps. Conflicting notes from different people in separate messages are the most common reason projects slow down." },
+        { "type": "h2", "text": "A simple template to copy" },
+        { "type": "ul", "items": [
+          "Goal: what should viewers do or feel after watching?",
+          "Format and length: platform, aspect ratio, duration.",
+          "Audience: who is this for?",
+          "References: links and what to borrow from each.",
+          "Assets: where to find footage, logos, fonts and music.",
+          "Deadline: when you need the first cut and the final file."
+        ] },
+        { "type": "p", "text": "Fill that in before every project and you will see fewer surprises, faster turnarounds, and edits that feel like your brand from the first draft." }
+      ]
+    },
+    {
+      "slug": "what-brand-guidelines-should-include",
+      "title": "What your brand guidelines should include (and what they shouldn’t)",
+      "category": "Branding",
+      "date": "2026-11-10",
+      "readTime": "5 min read",
+      "excerpt": "Brand guidelines only work if people actually use them. Keep yours focused on the decisions your team makes every day.",
+      "body": [
+        { "type": "p", "text": "A brand guideline document exists for one reason: to help other people make decisions that look and sound like you, without asking you every time. The most useful guidelines are the ones a busy team member can open, scan, and act on in a couple of minutes." },
+        { "type": "h2", "text": "The essentials" },
+        { "type": "ul", "items": [
+          "Logo usage: primary and alternate versions, minimum sizes, clear space, and a few examples of what not to do.",
+          "Colour palette: exact values for screen and print, with guidance on which colours lead and which support.",
+          "Typography: the typefaces, the weights you actually use, and a simple hierarchy for headings and body text.",
+          "Imagery: the style of photography or illustration that fits, with examples.",
+          "Tone of voice: a few words that describe how you sound, plus before and after examples."
+        ] },
+        { "type": "h2", "text": "Show, don’t just tell" },
+        { "type": "p", "text": "Rules are easier to follow when people can see them applied. Include real examples such as a social post, a slide, and an email header, so your team has a pattern to copy rather than a set of abstract instructions." },
+        { "type": "quote", "text": "If a rule needs a paragraph to explain, it probably needs an example instead." },
+        { "type": "h2", "text": "What to leave out" },
+        { "type": "p", "text": "Long brand origin stories, every possible edge case, and rules nobody will enforce all make a guideline harder to use. Keep strategy documents separate and let the guidelines focus on practical, everyday decisions." },
+        { "type": "h2", "text": "Make it easy to find" },
+        { "type": "p", "text": "Store the guidelines alongside the files people need: logo packs, templates, and fonts, in one shared folder. A guideline that lives in someone’s downloads folder will not get used." },
+        { "type": "p", "text": "Review it once or twice a year. As your brand grows, add examples from real work so the document keeps reflecting how you actually show up." }
+      ]
+    },
+    {
+      "slug": "seo-audit-checklist-for-small-business",
+      "title": "A practical SEO audit checklist for small business websites",
+      "category": "SEO",
+      "date": "2026-11-02",
+      "readTime": "7 min read",
+      "excerpt": "You don’t need expensive tools to find the issues holding your site back. Start with these checks and fix what matters most.",
+      "body": [
+        { "type": "p", "text": "An SEO audit sounds technical, but most of the issues that hold small business sites back are simple to spot. Work through this checklist with free tools such as Google Search Console and your own browser, and you will have a clear list of priorities." },
+        { "type": "h2", "text": "1. Can search engines find your pages?" },
+        { "type": "ul", "items": [
+          "Submit a sitemap in Google Search Console and check for coverage errors.",
+          "Make sure important pages are not blocked in robots.txt or marked noindex by mistake.",
+          "Check that every important page is linked from somewhere else on your site."
+        ] },
+        { "type": "h2", "text": "2. Does each page have a clear purpose?" },
+        { "type": "p", "text": "Every page should target one main topic. Give it a unique title tag and meta description that describe that topic in plain language, and use a single, descriptive main heading." },
+        { "type": "h2", "text": "3. Is the site fast and mobile friendly?" },
+        { "type": "ul", "items": [
+          "Compress large images and serve them at the size they are displayed.",
+          "Test key pages on a real phone, not just a desktop browser.",
+          "Review the Core Web Vitals report in Search Console for pages that need work."
+        ] },
+        { "type": "quote", "text": "Fix the basics before chasing advanced tactics. Most gains come from pages that are already almost right." },
+        { "type": "h2", "text": "4. Is your content answering real questions?" },
+        { "type": "p", "text": "Look at the search queries already bringing visitors to your site. Update pages so they answer those questions directly, and add internal links between related pages so visitors and search engines can follow the thread." },
+        { "type": "h2", "text": "5. Can people find you locally?" },
+        { "type": "p", "text": "If you serve customers in a specific area, claim and complete your Google Business Profile, and keep your business name, address and phone number consistent everywhere they appear." },
+        { "type": "h2", "text": "Make it a habit" },
+        { "type": "p", "text": "SEO is not a one-off project. Re-run this checklist every few months, track the changes you make, and watch how your visibility responds over time. Results depend on your competition and your site’s starting point, so steady, consistent work beats quick fixes." }
+      ]
+    }
+  ]
+}

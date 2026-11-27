@@ -29,7 +29,7 @@
             "1 consolidated revision round per video",
             "9:16 vertical format"
           ],
-          "delivery": "3–5 business days per batch",
+          "delivery": "3 to 5 business days per batch",
           "notes": [
             "Client supplies footage, scripts, and brand assets."
           ]
@@ -82,23 +82,23 @@
       "extras": [
         {
           "title": "Extra short-form video",
-          "price": "$50–$100"
+          "price": "$50 to $100"
         },
         {
-          "title": "YouTube video (5–10 minutes)",
-          "price": "$150–$300"
+          "title": "YouTube video (5 to 10 minutes)",
+          "price": "$150 to $300"
         },
         {
           "title": "Podcast episode editing",
-          "price": "$150–$300"
+          "price": "$150 to $300"
         },
         {
           "title": "Thumbnail design",
-          "price": "$25–$50"
+          "price": "$25 to $50"
         },
         {
           "title": "Rush delivery",
-          "price": "+25–50%"
+          "price": "+25 to 50%"
         }
       ]
     },
@@ -132,7 +132,7 @@
             "High-resolution logo files (PNG, JPG, SVG)",
             "Editable source files (AI/EPS)"
           ],
-          "delivery": "5–7 business days",
+          "delivery": "5 to 7 business days",
           "notes": []
         },
         {
@@ -154,7 +154,7 @@
             "Logo files (PNG, JPG, SVG, PDF)",
             "Editable source files (AI/EPS)"
           ],
-          "delivery": "7–10 business days",
+          "delivery": "7 to 10 business days",
           "notes": []
         },
         {
@@ -180,7 +180,7 @@
             "Organized digital brand asset folder",
             "Editable source files (AI/EPS)"
           ],
-          "delivery": "12–15 business days",
+          "delivery": "12 to 15 business days",
           "notes": []
         }
       ],
@@ -267,23 +267,23 @@
       "extras": [
         {
           "title": "Standalone SEO audit",
-          "price": "$150–$300"
+          "price": "$150 to $300"
         },
         {
           "title": "Keyword research",
-          "price": "$100–$200"
+          "price": "$100 to $200"
         },
         {
           "title": "SEO blog article",
-          "price": "$50–$100"
+          "price": "$50 to $100"
         },
         {
           "title": "Website SEO optimization project",
-          "price": "$300–$800"
+          "price": "$300 to $800"
         },
         {
           "title": "Local SEO setup",
-          "price": "$150–$300"
+          "price": "$150 to $300"
         }
       ]
     }
