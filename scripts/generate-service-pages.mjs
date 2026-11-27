@@ -1,32 +1,52 @@
 import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { homePricing, servicePage } from '../src/templates/service-page.js';
+import { header, footer } from '../src/templates/layout.js';
+import { serviceCards } from '../src/templates/service-cards.js';
+import { aboutPage, servicesPage, contactPage, blogIndexPage, blogPostPage } from '../src/templates/pages.js';
 import { siteOrigin, withSeo, sitemapXml } from './seo.mjs';
 
 const root = new URL('../', import.meta.url);
-const site = JSON.parse(await readFile(new URL('src/data/site.json', root), 'utf8'));
+const readJson = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
+const site = await readJson('src/data/site.json');
+const catalog = await readJson('src/data/services.json');
+const blog = await readJson('src/data/blog.json');
 const origin = siteOrigin(site);
-const catalog = JSON.parse(await readFile(new URL('src/data/services.json', root), 'utf8'));
+
+// Homepage: inject shared header, footer, service cards and pricing between markers.
 const homePath = new URL('index.html', root);
 let home = await readFile(homePath, 'utf8');
-const marker = /<!-- PRICING:START -->[\s\S]*?<!-- PRICING:END -->/;
-if (!marker.test(home)) throw new Error('Pricing section markers are missing from index.html.');
-home = home.replace(marker, `<!-- PRICING:START -->\n${homePricing(catalog)}\n<!-- PRICING:END -->`);
-home = withSeo(home, site, '/', origin);
-await writeFile(homePath, home);
-const header = home.match(/<header class="site-header">[\s\S]*?<\/header>/)[0]
-  .replaceAll('href="#', 'href="/#')
-  .replace('class="active"', 'class=""')
-  .replace(' aria-current="location"', '')
-  .replace('href="/#services"', 'href="/#services" class="active" aria-current="page"');
-const footer = home.match(/<footer class="footer">[\s\S]*?<\/footer>/)[0].replaceAll('href="#', 'href="/#');
-for (const service of catalog.services) {
-  const directory = new URL(`services/${service.slug}/`, root);
-  await mkdir(directory, { recursive: true });
-  await writeFile(new URL('index.html', directory), withSeo(servicePage(service, catalog, header, footer), site, `/services/${service.slug}/`, origin, service));
-}
-console.log(`Synced homepage pricing and ${catalog.services.length} service pages from src/data/services.json.`);
+const inject = (html, name, content) => {
+  const marker = new RegExp(`<!-- ${name}:START -->[\\s\\S]*?<!-- ${name}:END -->`);
+  if (!marker.test(html)) throw new Error(`${name} markers are missing from index.html.`);
+  return html.replace(marker, () => `<!-- ${name}:START -->\n${content}\n<!-- ${name}:END -->`);
+};
+home = inject(home, 'HEADER', header());
+home = inject(home, 'FOOTER', footer());
+home = inject(home, 'SERVICE-CARDS', serviceCards);
+home = inject(home, 'PRICING', homePricing(catalog));
+await writeFile(homePath, withSeo(home, site, '/', origin));
 
-const paths = ['/', ...catalog.services.map(service => `/services/${service.slug}/`)];
+// Generated pages: path -> html.
+const pages = new Map([
+  ['/about/', aboutPage()],
+  ['/services/', servicesPage(catalog)],
+  ['/contact/', contactPage()],
+  ['/blog/', blogIndexPage(blog)],
+  ...catalog.services.map(service => [`/services/${service.slug}/`, servicePage(service, catalog)]),
+  ...blog.posts.map(post => [`/blog/${post.slug}/`, blogPostPage(post, blog)]),
+]);
+const serviceBySlug = Object.fromEntries(catalog.services.map(service => [`/services/${service.slug}/`, service]));
+
+// Remove previously generated blog posts so deleted posts don't linger.
+await rm(new URL('blog/', root), { recursive: true, force: true });
+for (const [path, html] of pages) {
+  const directory = new URL(`.${path}`, root);
+  await mkdir(directory, { recursive: true });
+  await writeFile(new URL('index.html', directory), withSeo(html, site, path, origin, serviceBySlug[path]));
+}
+console.log(`Generated ${pages.size} pages (${catalog.services.length} services, ${blog.posts.length} blog posts).`);
+
+const paths = ['/', ...pages.keys()];
 await writeFile(new URL('public/robots.txt', root), `User-agent: *\nAllow: /\n${origin ? `\nSitemap: ${origin}/sitemap.xml\n` : ''}`);
 const sitemapPath = new URL('public/sitemap.xml', root);
 if (origin) await writeFile(sitemapPath, sitemapXml(paths, origin));
